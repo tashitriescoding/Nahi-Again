@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandStory from "@/components/BrandStory";
 import {
  getCategories,
  getAllCategories,
@@ -91,6 +92,7 @@ export default async function HomePage() {
       The Collection
      </h2>
     </div>
+    
 
     <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 gap-y-6 sm:gap-y-12 lg:gap-y-16">
      {visibleCategories.map((category) => (
@@ -98,6 +100,7 @@ export default async function HomePage() {
      ))}
     </div>
    </section>
+   <BrandStory />
 
    {/* --- EDITORIAL / CAMPAIGN BLOCK --- */}
    <section className="max-w-[1600px] mx-auto px-3 sm:px-6 md:px-12 lg:px-20 pb-12 sm:pb-24">
